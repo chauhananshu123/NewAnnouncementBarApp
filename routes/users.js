@@ -12,10 +12,10 @@ router.get('/', (req, res) => {
   res.render('index',{shop:shop});
 });
 
-// script router
-router.get('/server', (req, res) => {
-  res.sendFile(__dirname+'/script/load.js');
- });
+// // script router
+// router.get('/server', (req, res) => {
+//   res.sendFile(__dirname+'/script/load.js');
+//  });
  router.get('/style', (req, res) => {
    res.render('main');
  });

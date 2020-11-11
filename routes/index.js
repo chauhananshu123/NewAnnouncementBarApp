@@ -6,10 +6,10 @@ const cookie = require('cookie');
 const nonce = require('nonce')();
 const querystring = require('querystring');
 const request = require('request-promise');
-var shopModel = require('../models/shop');
-var fullshopModel = require('../models/fullshop');
+// var shopModel = require('../models/shop');
+// var fullshopModel = require('../models/fullshop');
 
-const sgMail = require('@sendgrid/mail');
+// const sgMail = require('@sendgrid/mail');
 
 //api keys
 const apiKey = '080975c4e45daa64a97c18cc63630346c';
