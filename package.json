@@ -6,11 +6,24 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.5.4",
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.0",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "mongoose": "^5.9.5",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.2",
+    "nonce": "^1.0.4",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
+    "sendgrid": "^5.2.3",
+    "shopify-node-api": "^1.11.1",
+    "twig": "^1.15.0"
   }
 }
