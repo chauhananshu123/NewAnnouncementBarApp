@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+      <!-- jQuery library -->
+      <link rel="stylesheet" href="../public/stylesheets/style.css">
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../public/javascripts/function.js"></script>
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="main-wrapper">
+         <div class="sticky-preview-bar no-border">
+            <div class="device-setting">
+               <ul>
+                  <li class="active js-desktop ">Desktop Preview</li>
+                  <li class="js-mobile">Mobile preview</li>
+               </ul>
+            </div>
+            <div class="preview-wrapper">
+               <div class="desktop-preview">
+                  <!-- <div class="safari">
+                     <div class="dots"><span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                     </div>
+                     <div class="input">www.example.com</div>
+                     <div class="plus-icon">+</div>
+                  </div> -->
+                  <div class="main-announcement-bar">
+                     <span>All of our products are 20% off sale, %name%</span>
+                     <span><a class="submit-link" href="">hii</a></span>
+                     <span class="dismiss"><a href="">&times;</a></span>
+                  </div>
+               </div>
+               <div class="mobile-preview">
+                  <!-- <div class="safari-mobile">
+                     <div class="safari-mobile-left">
+                        <img src="./signal.png" alt="">
+                        <span>Wayfx</span>
+                        <img src="./wifi.png" alt="">
+                     </div>
+                     <div class="safari-mobile-center">12:00</div>
+                     <div class="safari-mobile-right"><img src="./battry.png" alt=""></div>
+                  </div> -->
+                  <!--  replace this content with your announcement-bar html for mobile-->
+                  <div class="main-announcement-bar-mobile">
+                     <div class="set-view">
+                        <span>All of our products are 20% off sale, %name%</span>
+                        <span class="dismiss"><a href="">&times;</a></span><br>
+                        <span><a class="submit-link" href="">hii</a></span>
+                     </div>
+                  </div>
+                  <!--  replace this content with your announcement-bar html for mobile-->
+               </div>
+            </div>
+         </div>
+         <header>
+            <div class="left-btn-group">
+               <button class="btn">Help</button>
+               <button class="btn">Faqs</button>
+               <button class="btn">Document</button>
+            </div>
+            <div class="right-btn-group">
+               <button class="btn">Save</button>
+               <button class="btn">Discard</button>
+               <button class="btn">Preview</button>
+               <button class="btn dark">Save & Enable</button>
+            </div>
+         </header>
+         <div class="main">
+            <div class="card-group">
+               <div class="setting-group">
+                  <div class=" card">
+                     <div class="section-title">
+                        <h3>Bar Design</h3>
+                        <span class="help"><img src="./download.png" alt=""></span>
+                        <div class="description">
+                           <div class="close"><span class="close-icon">x</span></div>
+                           <ol>
+                              <li> <span class="desc-detail">Bar:</span> here you may Enable or Disable announcement bar  </li>
+                              <li><span class="desc-detail">Animation:</span>here you may Enable or Disable  Blink Animation</li>
+                              <li><span class="desc-detail">Message:</span>here you will be your announcement massage to show on your store</li>
+                              <li><span class="desc-detail">Text Color:</span>you may change color of your announcement text</li>
+                              <li><span class="desc-detail">Background Color:</span>here you may change Background Color of announcement text</li>
+                              <li><span class="desc-detail">Text Font Family</span>here you may change Text Font Family of announcement text</li>
+                           </ol>
+                        </div>
+                     </div>
+                     <div class="status">
+                        <label for="">Announcement Bar</label>
+                        <!-- <p class="description short">here you may Enable or Disable announcment bar</p> -->
+                        <div class="wrapper">
+                           <span class="status">Disable</span>
+                           <div class="slider"> <span class="ball"></span></div>
+                        </div>
+                     </div>
+                     <div class="status">
+                        <label for="">Animation</label>
+                        <div class="wrapper">
+                           <span class="status">Disable</span>
+                           <div class="slider"> <span class="ball"></span></div>
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Message:</label>
+                        <div class="massage"><input name="" id="" maxlength="120" cols="30" rows="10"><span class="massage-length">0/120</span></div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Text Color:</label>
+                        <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Background Color:</label>
+                        <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Text Font Family:</label>
+                        <div class="selecte">
+                           <select name="" id="">
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" card">
+                     <div class="section-title">
+                        <h3>Button</h3>
+                        <span class="help"><img src="./download.png" alt=""></span>
+                        <div class="description">
+                           <div class="close"><span class="close-icon">x</span></div>
+                           <ol>
+                              <li> <span class="desc-detail">Button:</span> here you may Enable or Disable announcement bar Button </li>
+                              <li><span class="desc-detail">Redirect to:</span>here you may set url to which announcement bar Button Redirect</li>
+                              <li><span class="desc-detail">Button Text Here:</span>here you will be your announcement bar Button Text</li>
+                              <li><span class="desc-detail">Button Text Color:</span>you may change color of your announcement bar Button text</li>
+                              <li><span class="desc-detail">Background Color:</span>here you may change Background Color of announcement text</li>
+                              <li><span class="desc-detail">Text Font Family</span>here you may change Text Font Family of announcement text</li>
+                           </ol>
+                        </div>
+                     </div>
+                     <div class="status">
+                        <label for="">Button</label>
+                        <div class="wrapper">
+                           <span class="status">Disable</span>
+                           <div class="slider"> <span class="ball"></span></div>
+                        </div>
+                     </div>
+                     <div class="input-group"><label for="">Button Text Here:</label><input type="text"></div>
+                     <div class="input-group">
+                        <label for="">Redirect to</label><input type="text" name="" id="">
+                     </div>
+                     <div class="input-group">
+                        <label for="">Button Text Color:</label>
+                        <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Button Text Font Family:</label>
+                        <div class="selecte">
+                           <select name="" id="">
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                              <option value="">sans sarif</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+            </div>
+            <div class="bar-behaviour card-group">
+               <div class="setting-group">
+                  <div class="card">
+                     <div class="section-title">
+                        <h3>Position & Behaviour </h3>
+                        <span class="help"><img src="./download.png" alt=""></span>
+                        <div class="description">
+                           <div class="close"><span class="close-icon">x</span></div>
+                           <ol>
+                              <li> <span class="desc-detail">Behaviour:</span> here you may set weathere bar will be scrollable or sticky  </li>
+                              <li><span class="desc-detail">Position:</span>here you may set bar will be on top or bottom</li>
+                              <li><span class="desc-detail">Select Option For display:</span>here you may set weathere bar will be shown to all pages or spacific</li>
+                             
+                           </ol>
+                        </div>
+                     </div>
+                     <div class="">
+                        <div class="input-group">
+                           <label for="">Behaviour:</label> <span class="radio-group">
+                           <input type="radio" checked name="behaviour">Sticky
+                           </span>
+                           <span class="radio-group">
+                           <input type="radio" name="behaviour">Scrollable
+                           </span>
+                        </div>
+                     </div>
+                     <div class="">
+                        <div class="input-group">
+                           <label for="">Position:</label> <span class="radio-group">
+                           <input type="radio" checked name="Position">Top
+                           </span>
+                           <span class="radio-group">
+                           <input type="radio" name="Position">Bottom
+                           </span>
+                        </div>
+                     </div>
+                     <div class="input-group">
+                        <label for="">Select Option For display:</label> <span class="radio-group">
+                        <input type="radio" checked name="display">All Pages
+                        </span>
+                        <span class="radio-group">
+                        <input type="radio" name="display">Product
+                        </span>
+                        <span class="radio-group">
+                        <input type="radio" name="display">Collection
+                        </span>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="section-title">
+                        <h3>Countdown Timer</h3>
+                        <span class="help"><img src="./download.png" alt=""></span>
+                        <div class="description">
+                           <div class="close"><span class="close-icon">x</span></div>
+                           <ol>
+                              <li> <span class="desc-detail">Countdown:</span> here you may Enable or Disable Countdown timer</li>
+                              <li><span class="desc-detail">Date:</span>here you may set Countdown start date</li>
+                              <li><span class="desc-detail">time:</span>here you may set Countdown start time</li>
+                              <li><span class="desc-detail">Background:</span>here you may set Countdown timer Background color</li>
+                           </ol>
+                        </div>
+                     </div>
+                     <div class="">
+                        <div class="status">
+                           <label for="">Countdown</label>
+                           <div class="wrapper">
+                              <span class="status">Disable</span>
+                              <div class="slider"> <span class="ball"></span></div>
+                           </div>
+                        </div>
+                        <div class="input-group">
+                           <label for="">Date</label>
+                           <input type="date">
+                        </div>
+                        <div class="input-group">
+                           <label for="">time</label>
+                           <input type="text">
+                        </div>
+                        <div class="input-group">
+                           <label for="">Background</label>
+                           <div class="color-pick"><span class="color">#000000</span><input type="color"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- <section class="countdown-timer">
+               </section> -->
+         </div>
+      </div>
+   </body>
+  
+</html>
