@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Users = require('./Controler/Users');
-const cors = require('cors');
+// const cors = require('cors');
 
 /* GET users listing. */
 router.get('/',Users.Urlpage);
@@ -40,9 +40,9 @@ router.get('/',Users.Urlpage);
 // script router
 router.get('/server',Users.Scripttag);
 
-router.get("/path",cors(),(req,res)=>{
-    res.send("heyyyy");
-})
+// router.get("/path",cors(),(req,res)=>{
+//     res.send("heyyyy");
+// })
 
 module.exports = router;
 
