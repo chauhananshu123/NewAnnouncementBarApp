@@ -6,7 +6,7 @@ const cookie = require('cookie');
 const nonce = require('nonce')();
 const querystring = require('querystring');
 const request = require('request-promise');
-var shopModel = require('../models/shop');
+// var shopModel = require('../models/shop');
 // var fullshopModel = require('../models/fullshop');
 
 // const sgMail = require('@sendgrid/mail');
