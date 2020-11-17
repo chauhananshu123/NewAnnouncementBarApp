@@ -24,6 +24,6 @@
     "request-promise": "^4.2.6",
     "sendgrid": "^5.2.3",
     "shopify-node-api": "^1.11.1",
-    "twig": "^1.15.0"
+    "twig": "^1.15.3"
   }
 }
