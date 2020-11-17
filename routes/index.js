@@ -9,7 +9,7 @@ const request = require('request-promise');
 var shopModel = require('../models/shop');
 var fullshopModel = require('../models/fullshop');
 
-const sgMail = require('@sendgrid/mail');
+// const sgMail = require('@sendgrid/mail');
 
 const myInstaller = require('./Controler/Installer');
 const Auth = require('./Controler/Auth');
